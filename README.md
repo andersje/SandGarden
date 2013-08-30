@@ -1,7 +1,7 @@
 SandGarden
 ==========
 
-SandGarden is a series of shellscripts written to control Xen-based VMs, which are accessible to endusers only via SSH.  Developed under a grant from the state of Minnesota, these scripts used to managed Xen-based VMs used in introductory, intermediate and advanced linux administration courses.  At this point, it's been nearly six years since I worked with this much, but perhaps this code will prove useful to someone else.  It shouldn't be too hard to adjust this to use virsh and kvm, and if anyone is interested in that, I could give you a hand with it.
+SandGarden is a series of shellscripts written to control Xen-based VMs, which are accessible to endusers only via SSH.  Developed under a grant from the state of Minnesota, these scripts were used to managed Xen-based VMs used in introductory, intermediate and advanced linux administration courses.  At this point, it's been nearly six years since I worked with this much, but perhaps this code will prove useful to someone else.  It shouldn't be too hard to adjust this to use virsh and kvm, and if anyone is interested in that, I could give you a hand with it.
 
 original readme follows:
 
@@ -61,26 +61,11 @@ DIRECTORY STRUCTURE:
 
 arrange the scripts in this directory thusly:
 
+/usr/local/bin:  killer.bash, attach_xen.bash, start_xen.bash, loginmenu.bash
+/usr/local/sbin:  add_student_machines.bash, create_machine_def.bash, image_single.bash
 
-/usr/local/bin/killer.bash
-/usr/local/bin/attach_.bash
-/usr/local/bin/start_.bash
-/usr/local/bin/loginmenu.bash
-/usr/local/sbin/
-/usr/local/sbin/add_student_machines.bash
-/usr/local/sbin/create_machine_def.bash
-/usr/local/sbin/TODO
-/usr/local/sbin/image_single.bash
-/etc/
-/etc/group
-/etc/passwd
-/etc/profile
-/etc/sudoers
-/etc//
-/etc/xen/lastip 
-/etc/xen/last_uuid
-/etc/xen/student_machines
-/etc/xen/sample1
-/etc/xen/.help
-/etc/xen/.motd
+create an /etc/xen directory.  touch the files lastip, last_uuid.  populate the student_machines file (sample in configs/ dir).
+create the .motd and .help files in /etc/xen.
 
+be sure to add %xen_usr ALL = NOPASSWD: XEN  into /etc/sudoers
+be sure all your xen users are in the xen_usr group.
