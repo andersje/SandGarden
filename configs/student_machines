@@ -1,0 +1,8 @@
+# this file must be in the format
+# MACHINENAME PARTITION MAC_ADDRESS
+# 
+slarti		xen001	00:16:3e:06:5d:bb
+bartfast	xen002	00:16:3e:06:5d:bc
+cthulhu		xen003	00:16:3e:06:5d:bd
+lemuel		xen004	00:16:3e:06:5d:be
+einar		xen005	00:16:3e:06:5d:bf

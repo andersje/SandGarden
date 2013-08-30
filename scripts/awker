@@ -1,0 +1,4 @@
+#!/bin/awk
+{print $1".	0	IN	A	"$2;
+print $2"	0	IN	PTR	"$1"." ;
+}
