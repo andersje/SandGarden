@@ -18,7 +18,7 @@ Currently, it is released under the GPLv2 (included in this directory).
 When GPLv3 is released, it will likely be upgraded to that.  
 
 Questions and comments can be sent to Jeremy Anderson:
-jeremy@angelar.com
+http://github.com/andersje
 
 see:  gpl.txt for actual licensing terms.
 
